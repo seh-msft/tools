@@ -37,7 +37,7 @@ func main() {
 	// Read input(s) and emit their decoded form
 	for i, in := range inputs {
 		if in == nil {
-			log.Fatal("Got nil buffer on writer #", i)
+			log.Fatal("err: got nil buffer on writer #", i)
 		}
 		s := ""
 
