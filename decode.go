@@ -11,7 +11,7 @@ import (
 	"flag"
 )
 
-// HTML-encode stdin (or arguments, if provided)
+// HTML-decode stdin (or arguments, if provided)
 func main() {
 	nl := flag.Bool("n", false, "Suppress newline")
 	flag.Parse()
