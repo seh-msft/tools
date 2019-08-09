@@ -28,6 +28,7 @@ func main() {
 			if err != nil {
 				log.Fatal("err: could not open file - ", err)
 			}
+			defer f.Close()
 
 			r := bufio.NewReader(f)
 			inputs = append(inputs, r)
